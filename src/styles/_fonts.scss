@@ -1,0 +1,7 @@
+
+@mixin IBMPlex($taille, $poids, $style) {
+    font-family: 'IBM Plex', sans-serif;
+    font-size: $taille;
+    font-weight: $poids;
+    font-style: $style;
+}

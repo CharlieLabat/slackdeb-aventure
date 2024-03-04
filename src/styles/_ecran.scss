@@ -1,0 +1,15 @@
+.ecran{
+    background-color: $fond-texte;
+    min-width: 40vw;
+    min-height: 50vh;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: $cadre;
+    &__image{
+        color: $police;
+        text-align: center;
+        max-width: 40vw;
+        max-height: 50vh;
+        @include IBMPlex(2.4rem,bold,normal)
+    }
+}

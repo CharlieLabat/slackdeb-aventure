@@ -1,0 +1,32 @@
+@import "./styles/reset"; // Retire tout style par défaut des navigateurs
+@import "./styles/base"; // Ajuste le style général
+@import "./styles/colors"; // Gère les couleurs
+@import "./styles/fonts"; // Gère les polices
+
+body {
+  background-color: $fond-page;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titre-principal {
+  text-align: center;
+  color: $police;
+  @include IBMPlex(3.2rem, 400, normal);
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+
+  filter: drop-shadow(1px 1px 5px #000000);
+  &--p1{
+    color: $detail-1;
+  }
+  &--p2{
+    color: $detail-2;
+  }
+}
+
+// Style des composant 
+
+@import './styles/ecran';
