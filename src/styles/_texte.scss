@@ -1,0 +1,17 @@
+.texte{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    background-color: $fond-texte;
+    min-width: 40vw;
+    min-height: 30vh;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: $cadre;
+ &__dialogue{
+
+ }
+ &__commande{
+
+ }
+}
