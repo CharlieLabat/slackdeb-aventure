@@ -1,6 +1,7 @@
 .texte{
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+   justify-content: end;
     align-items: start;
     background-color: $fond-texte;
     min-width: 40vw;
@@ -9,9 +10,15 @@
     border-style: solid;
     border-color: $cadre;
  &__dialogue{
-
+  color: $police;
+  @include IBMPlex(1.6rem,bold,normal)
+ }
+ &__hote{
+    
  }
  &__commande{
-
+    background-color: $fond-texte;
+    border: 0;
+    color: $police;
  }
 }
