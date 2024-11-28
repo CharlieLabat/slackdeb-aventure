@@ -1,24 +1,42 @@
-.texte{
-    display: flex;
-    flex-direction: column;
-   justify-content: end;
-    align-items: start;
-    background-color: $fond-texte;
-    min-width: 40vw;
-    min-height: 30vh;
-    border-width: 0.1rem;
-    border-style: solid;
-    border-color: $cadre;
- &__dialogue{
-  color: $police;
-  @include IBMPlex(1.6rem,bold,normal)
- }
- &__hote{
-    
- }
- &__commande{
+.texte {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  background-color: $fond-texte;
+  min-width: 40vw;
+  min-height: 30vh;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: $cadre;
+  padding: 1rem;
+  &__interaction{
+   display: flex;
+   margin-top: 1rem;
+   gap: 1rem;
+  }
+  &__instruction{
+   color: $police;
+   @include IBMPlex(1.6rem, 100, italic);
+  }
+  &__dialogue {
+    color: $police;
+    @include IBMPlex(1.6rem, bold, normal);
+  }
+  &__hote {
+    color: $detail-1;
+    @include IBMPlex(1.6rem, lighter, normal);
+    &--chemin{
+      color: $detail-2;
+
+    }
+    &--utilisateur{
+      color: $police;
+    }
+  }
+  &__commande {
     background-color: $fond-texte;
     border: 0;
     color: $police;
- }
+  }
 }
