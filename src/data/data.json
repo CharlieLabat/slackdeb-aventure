@@ -1,0 +1,16 @@
+{
+  "saves": [
+    { "id": 0, "partie": "Partie 1", "niveau": "Aucun", "niveau-id": 0 },
+    { "id": 1, "partie": "Partie 2", "niveau": "Aucun", "niveau-id": 0 },
+    { "id": 2, "partie": "Partie 3", "niveau": "Aucun", "niveau-id": 0 }
+  ],
+  "levels": [
+    {
+      "id": 0,
+      "nom-niveau": "Début de l'aventure",
+      "image": "assets/images/DebutAventure.png",
+      "description": "Bienvenue",
+      "liste-cmd": [{ "cmd": "start", "action": "pour commencer le jeu" }]
+    }
+  ]
+}
