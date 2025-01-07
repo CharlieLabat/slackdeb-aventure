@@ -10,7 +10,20 @@
       "nom-niveau": "Début de l'aventure",
       "image": "assets/images/DebutAventure.png",
       "description": "Bienvenue",
-      "liste-cmd": [{ "cmd": "start", "action": "pour commencer le jeu" }]
+      "liste-cmd": [
+        { "cmd": "start", "action": "pour commencer le jeu"  },
+        { "cmd": "load", "action": "pour charger une partie" }
+      ]
+    },
+    {
+      "id": 1,
+      "nom-niveau": "Votre niveau",
+      "image": "assets/images/EcranMaison.png",
+      "description": "Vous êtes dans...",
+      "liste-cmd": [
+        { "cmd": "", "action": "" },
+        { "cmd": "", "action": "" }
+      ]
     }
   ]
 }
