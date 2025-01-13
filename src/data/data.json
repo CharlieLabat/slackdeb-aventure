@@ -17,7 +17,7 @@
     },
     {
       "id": 1,
-      "nom-niveau": "Votre niveau",
+      "nom-niveau": "Votre maison",
       "image": "assets/images/EcranMaison.png",
       "description": "Vous êtes dans...",
       "liste-cmd": [
