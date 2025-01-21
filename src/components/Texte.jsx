@@ -1,5 +1,5 @@
 import React from "react";
-
+import useCommand from "../hooks/useCommand";
 const Texte = () => {
   return (
     <section className="texte">
@@ -16,6 +16,7 @@ const Texte = () => {
           id="commande"
           className="texte__commande"
           placeholder="_"
+          onInput={}
         />
       </div>
     </section>

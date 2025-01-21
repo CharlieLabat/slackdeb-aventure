@@ -8,7 +8,7 @@
     {
       "id": 0,
       "nom-niveau": "Début de l'aventure",
-      "image": "assets/images/DebutAventure.png",
+      "image": "assets/images/EcranDebut.png",
       "description": "Bienvenue",
       "liste-cmd": [
         { "cmd": "start", "action": "pour commencer le jeu"  },

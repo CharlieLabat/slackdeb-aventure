@@ -6,7 +6,7 @@ function useCommand(cmd, texte, id) {
     const listeCmd = Donnee.levels[id]["liste-cmd"]
     switch (cmd) {
         case "start":
-         
+            
             break
         case "save":
             saveGame(texte,id)
