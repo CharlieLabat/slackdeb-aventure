@@ -25,10 +25,13 @@ const Texte = (props) => {
    }
 
  };
+
+ const listeCmdLevel = props.texteLevel[1].map((ele) => ele.cmd + " " + ele.action + " ")
+
   return (
     <section className="texte">
-      <p className="texte__dialogue">Texte</p>
-      <p className="texte__instruction">Ici liste des commandes</p>
+      <p className="texte__dialogue">{props.texteLevel[0]}</p>
+      <p className="texte__instruction">{listeCmdLevel}</p>
       <form className="texte__interaction" onSubmit={handlePromptSoumis}>
         <label htmlFor="commande" className="texte__hote">
           lejoueur@sda <span className="texte__hote--chemin">~</span>
