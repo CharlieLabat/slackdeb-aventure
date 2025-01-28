@@ -1,32 +1,30 @@
 import React, { useState } from "react";
 import listeCommand from "../hooks/listeCommand";
-
-const Texte = () => {
+import Donnee from "../data/data.json";
+const Texte = (props) => {
   const [commande, setCommande] = useState(""); // Stock la commande du terminal
-  const [idLevel, setIdLevel] = useState(0) // Stock l'id du niveau courant 
-  const [imageLevel, setImageLevel] = useState(["", ""]) // Stock l'image et son nom (alt)
-  // Gere la récupération de la commande 
-  const handlePrompt = (evt) => {
-    setCommande(evt.target.value);
-    
-  };
+ // Gere la récupération de la commande 
+ const handlePrompt = (evt) => {
+  setCommande(evt.target.value);
+  
+};
   // Gere l'envoi vers les actions du jeu 
   const handlePromptSoumis = (evt) => {
-    evt.preventDefault();
-    console.log(commande);
-    const cmdListe = commande.split(" ")
-    console.log(cmdListe)
-    if (cmdListe.length === 3) { // Si un id existe 
-      listeCommand(cmdListe)
-    }
-    else{
-      cmdListe.push("")
-      cmdListe.push("0")
+   evt.preventDefault();
+   console.log(commande);
+   const cmdListe = commande.split(" ")
+   console.log(cmdListe)
+   if (cmdListe.length === 3) { // Si un id existe 
+     listeCommand(cmdListe)
+   }
+   else{
+     cmdListe.push("")
+     cmdListe.push("0")
 
-      listeCommand(cmdListe)
-    }
+     listeCommand(cmdListe)
+   }
 
-  };
+ };
   return (
     <section className="texte">
       <p className="texte__dialogue">Texte</p>
