@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import listeCommand from "../hooks/listeCommand";
-import Donnee from "../data/data.json";
+import Donnee from "../hooks/donnee.js";
+
 const Texte = (props) => {
   const [commande, setCommande] = useState(""); // Stock la commande du terminal
  // Gere la récupération de la commande 

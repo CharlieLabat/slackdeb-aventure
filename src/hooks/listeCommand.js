@@ -1,4 +1,4 @@
-import Donnee from "../data/data.json";
+import Donnee from "./donnee";
 import saveGame from "./saveGame";
 
 
