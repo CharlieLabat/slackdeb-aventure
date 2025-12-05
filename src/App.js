@@ -2,13 +2,14 @@
 import { useEffect, useState } from 'react';
 import './App.scss';
 import Jeu from './components/Jeu';
-import Donnee from './hooks/donnee';
+
+
 
 
 function App() {
-  const [data, setData] = useState(null)
+  const [data, setData] = useState({ saves: null, levels: null })
   useEffect(() =>
-    fetch("/data/data.json").then((res) => res.json()).then((d) => setData(d)).catch(error => console.error('Error fetching data:', error))
+    fetch("/data.json").then((res) => res.json()).then((d) => setData(d)).catch(error => console.error('Erreur', error))
     , []
 
   )
