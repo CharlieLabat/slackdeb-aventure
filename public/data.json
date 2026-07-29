@@ -1,4 +1,5 @@
 {
+  "title" : "Donnée du jeu SlackDeb Aventure",
   "saves": [
     { "id": 0, "partie": "Partie 1", "niveau": "Aucun", "niveau-id": 0 },
     { "id": 1, "partie": "Partie 2", "niveau": "Aucun", "niveau-id": 0 },
